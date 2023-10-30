@@ -1,0 +1,42 @@
+<div class="Menu">
+    <title>Contato</title>
+    <ul>
+        <!-- Cada <li> é um item no menu fixo no topo da tela. -->
+            <li><a href="index.html">
+                <img src="logo-home.png" style="height: 25px;">
+                <span>Home</span>
+            </a></li>
+
+        <li><a href="https://www.linkedin.com/in/lucas-%C3%A1vila-5140b21b6/">
+            <img src="linkedin-logo.png" style="height: 25px;">
+            <span>LinkedIn</span>
+        </a></li>
+        
+        <li><a href="https://github.com/nbavila">
+            <img src="github-logo.png" style="height: 25px;">
+            <span>GitHub</span>
+        </a></li>
+    </ul>
+</div> 
+
+<!-- <div> exibida a direita da tela, contém apenas o formulário -->
+    <div  id="contactInfo">
+        <link rel="stylesheet" href="estilo.css">
+        <h1>Contate-me</h1>
+        <p>Informações de contato</p>
+        <form action="mailto:avilalucas11@gmail.com" method="post">
+            <label for="nome">Nome: <br></label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+    
+            <label for="email">E-mail: <br></label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+    
+            <label for="mensagem">Mensagem: <br></label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>    
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

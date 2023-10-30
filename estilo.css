@@ -1,0 +1,199 @@
+/* Considera borda como o tamanho real da caixa */
+*{
+    box-sizing: border-box;
+}
+
+/* Estilizações simples */
+body{
+    background-color: #201f1f;
+    color: #8d8d8d;
+    margin: 2%;
+    margin-top: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Inicio estilos do Menu */
+.Menu{
+    background-color: #E50914;
+    width: 100%;
+    /* Configurações para manter este elemento fixo na tela: */
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+.Menu ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.Menu li{
+    padding-left: 2%;
+}
+
+.Menu a{
+    display:block
+}
+
+.Menu img{
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+.Menu span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a{
+    color:#8d8d8d;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #ffff;
+}
+/* fim estilos do Menu */
+
+
+/* estilização adequada para exibir o primeiro conteúdo */
+.Presentation{
+    height: 90vh
+}
+
+#myName{
+    text-align: center;
+    font-weight: lighter;
+    color: #8d8d8d;
+    font-weight: lighter;
+}
+
+#myName:hover, h1:hover, a:hover, h2:hover, h3:hover{
+    color: #ffff;
+}
+
+/* define a região onde se encontram os links úteis dentro da pagina */
+.Util{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    border: 3px;
+}
+
+/* estilização do <a> */
+.Util a{
+    display:block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #E50914;
+    background-color: #E50914;
+    border-radius: 25px;
+    margin-right: 15px; 
+    margin-bottom: 15px;
+}
+.Util a:hover{
+    font-size: 18px;
+    border: 3px solid #e06d73;
+}
+
+/* Alinhamento dos pequenos icones ao lado dos textos dos links */
+.Util img{
+    vertical-align: middle;
+}
+
+.Util span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+#projects,
+#aboutEducation{
+    height: -20vh
+}
+ #aboutEducation li, #aboutEducation h2, h3, p{
+    text-align: left;
+ }
+
+ #aboutEducation input{
+    color: #8d8d8d;
+ }
+
+ #aboutEducation input:hover{
+    background-color: #E50914;
+    border: 3px solid #e06d73;
+    color: #ffff;
+    font-size: 15px;
+    margin-bottom: 15px;
+ }
+
+
+#gitHubSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* estilização da sessão gitHub */
+.Repositories{
+    background-color: #353535;
+    display: flex;
+    height: var(--repoBoxSize);
+    text-align: left;
+    border-radius: 25px;
+}
+
+.Repositories img{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: var(--repoBoxSize);
+}
+
+.RepositoryDescription{
+    color: white;
+    margin: 8px;
+    display: block;
+}
+
+.RepositoryTitle{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1%;
+    color: ffff#8d8d8d;
+}
+
+
+
+
+/* formatações do formulario */
+form {
+    background-color: #353535;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin-bottom: 3px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #E50914;
+    background-color: #282828;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#contactInfo input:hover{
+    border: 4px solid #e06d73;
+    font-size: 15px;
+}
